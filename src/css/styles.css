@@ -58,7 +58,6 @@
 .form-btn {
   border-radius: 8px;
   padding: 8px 16px;
-  width: 91px;
   background: #4e75ff;
 
   font-family: var(--font-family);
@@ -162,6 +161,33 @@
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
+
+.load-btn {
+  visibility: hidden;
+}
+
+.load-btn.is-visible {
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  margin-top: 32px;
+  visibility: visible;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.load-btn.is-visible:hover,
+.load-btn.is-visible:focus {
+  background: #6c8cff;
+  transform: scale(1.05);
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
